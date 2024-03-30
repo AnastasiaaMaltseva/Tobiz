@@ -1,10 +1,4 @@
 /* 1 селектор */
-/* main >.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-} */
 
 .welcome{
     color: white;
@@ -15,14 +9,19 @@
     margin-top: 100px;
 }
 
+main > section{
+    margin-bottom: 150px;
+}
+
 .button, .button_secondary{
     border-radius: 5px;
     font-size: 18px;
     padding: 25px 0px;
     width: 250px;
     border: 1px;
-    margin: 0px 10px;
-    margin-top: 30px;
+    margin: 30px 10px 30px 10px;
+    /* margin-top: 30px; */
+
 }
 
 .button_secondary{
@@ -39,11 +38,10 @@
 }
 
 .text{
-    font-size: 20px;
-    width: 70%;
+    font-size: 25px;
     text-align: center;
     color: white;
-    align-items: center;
+    margin-top: 20px;
 }
 
 .image > img{
@@ -71,12 +69,22 @@
 .card{
     margin: 20px 20px;
     padding: 20px 20px;
-    width: 25%;
+    width: 29%;
     height: 304px;
 }
 
-.title_mini{
+.card_secondary{
+    height: 730px;
+}
+
+.list{
+    color: white;
+    text-align: left;
+}
+
+.title_little{
     font-size: 20px;
+
 }
 
 .text_mini{
@@ -85,22 +93,18 @@
 
 .items > img{
     border-radius: 50%;
-    height: 95px;
-    width: 95px;
+    height: 120px;
+    width: 120px;
 }
 
-.items{
+.items, .items_secondary{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 /* 3 селектор */
-
-.desc_1{
-    justify-content: center;
-    text-align: center;
-}
 
 .title_secondary{
     font-size: 40px;
@@ -110,16 +114,14 @@
 .subtitle{
     font-size: 24px;
     margin-bottom: 20px;
+    color: white;
+    text-align: center;
 }
 
-.title-board{
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.desc_2, .desc_3{
+.desc{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .img-desc_2, .img-desc_3{
@@ -128,38 +130,25 @@
     padding-bottom: 30px;
 }
 
-.list-desc_2, .list-desc_3, .text-board{
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
 .board{
     margin: 20px 50px;
+    line-height: 20px;
+}
+
+.board > .title_little{
+    text-align: left;
+}
+
+.board > .text_mini{
+    text-align: left;
+}
+
+.board > .title_secondary{
+    margin-bottom: 40px;
 }
 
 /* 4 селектор */
-
-.desc_4{
-    color: white;
-    text-align: center;
-    margin: 150px;
-}
-
-.title-desc_4{
-    font-size: 62px;
-    margin-bottom: 10px;
-}
-
-.mini-title-desc_4{
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.text-desc_4{
-    font-size: 24px;
-    margin-bottom: 50px;
-}
-
+/* 
 .button-desc_4{
     background-color: rgb(97, 99, 225);
     border-radius: 5px;
@@ -169,13 +158,9 @@
     width: 450px;
     height: 60px;
     color: white;
-}
+} */
 
 /* 5 селектор */
-
-.selector_5{
-    color: white;
-}
 
 .title-desc_5{
     font-size: 50px;
@@ -186,61 +171,35 @@
     margin-bottom: 35px;
 }
 
-.desc_5{
-    text-align: center;
-}
-
-.img_col > img{
+.img_card > img{
     width: 370px;
     height: 500px;
 }
 
-.col{
-    width: 29%;
-    margin-left: 3%;
-    margin-right: 0;
-}
-
-.desc_col{
-    text-align: center;
-}
-
-.str{
+.collection{
     display: flex;
     margin-bottom: 50px;
 }
 
-.link_col{
+.link{
     font-size: 18px;
 }
 
-.text_col{
+.text_little{
     font-size: 14px;
+}
+
+.desc_secondary{
+    text-align: center;
+}
+
+.card_secondary{
+    text-align: center;
 }
 
 /* селектор 6 */
 
-.desc-1_selector_6{
-    text-align: center;
-    color: white;
-    margin: 200px 0px 30px 0px;
-}
-
-.title_selector_6{
-    font-size: 50px;
-}
-
-.text_selector_6{
-    font-size: 24px;
-}
-
-.desc-2_selector_6{
-    display: flex;
-    color: white;
-    justify-content: center;
-}
-
-.border_selector_6{
+.border{
     background-color: #242729;
     width: 400px;
     padding: 40px 50px;
@@ -248,25 +207,44 @@
     height: 550px;
 }
 
-.title_border{
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-.text_border{
-    font-size: 18px;
-} 
-
-.img_border{
+.items_secondary > img{
     height: 80px;
     width: 80px;
     border-radius: 100%;
     margin: 0px 10px;
 }
 
-.desc-2_selector_6{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    margin: 25px 0px 0px 0px;
+/* 7 селектор */
+
+.registration{
+    border: 5px solid rgb(97, 99, 225);
+    padding: 30px;
+    text-align: center;
+    width: 930px;
+    height: 365px;
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+    margin: 200px 150px ;
+}
+
+.email{
+    height: 74px;
+    width: 830px;
+}
+
+.button_subscribe{
+    height: 50px;
+    width: 250px;
+    padding: 0px 10px;
+}
+
+input{
+    height: 47px;
+    width: 375px;
+    padding: 12px 12px 12px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
 }

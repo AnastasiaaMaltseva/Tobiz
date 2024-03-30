@@ -34,10 +34,15 @@ header >.container {
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+
 }
 
 .logo, .button-primary, .menu__link{
     color: white;
+}
+
+.logo{
+    font-size: 36px;
 }
 
 .button{
